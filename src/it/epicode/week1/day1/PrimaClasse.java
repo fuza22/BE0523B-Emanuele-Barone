@@ -1,4 +1,4 @@
-package it.epicode.week1.day1;
+package src.it.epicode.week1.day1;
 
 import java.util.Scanner;
 
