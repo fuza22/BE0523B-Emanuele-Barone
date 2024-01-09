@@ -25,7 +25,7 @@ public class Esercizio1 {
 
         int anno = scan.nextInt();
 
-        if(anno % 4 == 0){
+        if((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)){
 
             System.out.println("L'anno inserito è bisestile");
 
