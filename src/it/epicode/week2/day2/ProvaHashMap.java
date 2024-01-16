@@ -23,12 +23,20 @@ public class ProvaHashMap {
         Articolo a = inventario.get(1); // get permette di estrarre il valore inserendo la chiave, è l'unico modo di effettuare una ricerca all'interno di una mappa
         System.out.println(a);
 
+
+
+
         Set<Integer> chiavi = inventario.keySet(); // permette di estrarre un set di tutte le chiavi della mappa, solo le chiavi
-        System.out.println(chiavi);
 
-        for(Integer c:chiavi){ // ciclo sul set di chiavi con un ciclo avanzato, per ogni chiave che estratto entro nella mappa ed estraggo l'articolo associato
+        for(Integer c:chiavi){ // ciclo sul set di chiavi con un ciclo avanzato, per ogni chiave che estraggo entro nella mappa ed estraggo l'articolo associato
 
-            System.out.println(inventario.get(c));
+          Articolo art = inventario.get(c);
+          // estraggo una chiave tramite il codice collegato ad un articolo
+          if(art.equals(a1)){ // cosi verifico se l'articolo corrisponde all'articolo cercato e di conseguenza la chiave
+
+              System.out.println(c);
+
+          }
 
         }
 
